@@ -1,0 +1,46 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Course 1",
+      "description": "Description for Course 1",
+      "link": "https://example.com/course1",
+      "level": "Beginner"
+    },
+    {
+      "id": 2,
+      "title": "Course 2",
+      "description": "Description for Course 2",
+      "link": "https://example.com/course2",
+      "level": "Intermediate"
+    },
+    {
+      "id": 3,
+      "title": "Course 3",
+      "description": "Description for Course 3",
+      "link": "https://example.com/course3",
+      "level": "Advanced"
+    },
+    {
+      "id": 4,
+      "title": "Course 4",
+      "description": "Description for Course 4",
+      "link": "https://example.com/course4",
+      "level": "Beginner"
+    },
+    {
+      "id": 5,
+      "title": "Course 5",
+      "description": "Description for Course 5",
+      "link": "https://example.com/course5",
+      "level": "Intermediate"
+    },
+    {
+      "id": 6,
+      "title": "Course 6",
+      "description": "Description for Course 6",
+      "link": "https://example.com/course6",
+      "level": "Advanced"
+    }
+  ]
+}
