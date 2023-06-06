@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 import { v4 as uuidv4 } from 'uuid';
-import { courses } from './data.json';
+import data from './data.json';
 import { Course } from '@/app/types/Course';
+
+const courses = data.courses;
 
 export async function GET(request: Request) {
   return NextResponse.json(courses);

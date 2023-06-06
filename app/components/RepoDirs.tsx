@@ -17,9 +17,8 @@ async function fetchRepoContents(name: string) {
 }
 
 const RepoDirs = async ({ name }: IProps) => {
-  const contents = await fetchRepoContents(name);
-  const dirs =
-    contents && contents.filter((content: any) => content.type === 'dir');
+  const contents = (await fetchRepoContents(name)) || [];
+  const dirs = contents.filter((content: any) => content.type === 'dir');
 
   return (
     <>
