@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { Course } from './types/Course';
 import LoadingPage from './loading';
@@ -28,9 +29,9 @@ const HomePage = () => {
   return (
     <>
       <h1 className="text-xl font-semibold mb-5">Courses</h1>
-      {/* @ts-expect-error Server Component */}
-      <CourseSearch getSearchResult={(results) => setCourses(results)} />
-      {/* @ts-expect-error Server Component */}
+      <CourseSearch
+        getSearchResult={(results: Course[]) => setCourses(results)}
+      />
       <Courses courses={courses} />
     </>
   );

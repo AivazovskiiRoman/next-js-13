@@ -16,7 +16,7 @@ async function fetchRepos(name: string) {
 }
 
 const Repo = async ({ name }: IProps) => {
-  const repo = await fetchRepos(name);
+  const repo: Repository = await fetchRepos(name);
 
   return (
     <>

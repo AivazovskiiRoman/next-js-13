@@ -5,7 +5,7 @@ interface IProps {
   courses: Course[];
 }
 
-const Courses = async ({ courses }: IProps) => {
+const Courses = ({ courses }: IProps) => {
   return (
     <ul className="space-y-4 pb-5">
       {courses.map((course) => (
