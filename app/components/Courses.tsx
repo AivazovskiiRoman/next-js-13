@@ -14,7 +14,7 @@ const Courses = async () => {
   const courses = await fetchCourses();
 
   return (
-    <ul className="space-y-4">
+    <ul className="space-y-4 pb-5">
       {courses.map((course) => (
         <li key={course.id} className="rounded-lg overflow-hidden shadow-md">
           <div className="bg-slate-300 p-6">
