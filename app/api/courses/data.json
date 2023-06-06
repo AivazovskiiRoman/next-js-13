@@ -2,22 +2,22 @@
   "courses": [
     {
       "id": "6df514a7-07b1-4bd9-a7f9-f2a3a8898881",
-      "title": "Course 1",
-      "description": "Description for Course 1",
+      "title": "React Front To Back",
+      "description": "Learn Modern React, Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects.",
       "link": "https://example.com/course1",
       "level": "Beginner"
     },
     {
       "id": "6df514a7-07b1-4bd9-a7f9-f2a3a8898882",
-      "title": "Course 2",
-      "description": "Description for Course 2",
+      "title": "Node.js API Masterclass",
+      "description": "Build an extensive RESTful API using Node.js, Express, and MongoDB",
       "link": "https://example.com/course2",
       "level": "Intermediate"
     },
     {
       "id": "6df514a7-07b1-4bd9-a7f9-f2a3a8898883",
-      "title": "Course 3",
-      "description": "Description for Course 3",
+      "title": "Modern JavaScript From The Beginning",
+      "description": "More than 30-hour course that teaches you all of the fundamentals of modern JavaScript.",
       "link": "https://example.com/course3",
       "level": "Advanced"
     },
