@@ -1,18 +1,11 @@
 import Link from 'next/link';
 import { Course } from '../types/Course';
 
-async function fetchCourses() {
-  const response = await fetch('http://localhost:3000/api/courses/', {
-    next: { revalidate: 60 },
-  });
-
-  const courses: Course[] = await response.json();
-  return courses;
+interface IProps {
+  courses: Course[];
 }
 
-const Courses = async () => {
-  const courses = await fetchCourses();
-
+const Courses = async ({ courses }: IProps) => {
   return (
     <ul className="space-y-4 pb-5">
       {courses.map((course) => (
