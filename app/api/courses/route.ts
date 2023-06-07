@@ -3,9 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 import data from './data.json';
 import { Course } from '@/app/types/Course';
 
-const courses = data.courses;
-
 export async function GET(request: Request) {
+  const courses = data.courses;
   return NextResponse.json(courses);
 }
 
@@ -20,7 +19,7 @@ export async function POST(request: Request) {
     link,
   };
 
-  courses.push(newCourse);
+  const courses = [...data.courses, newCourse];
 
   return NextResponse.json(courses);
 }
